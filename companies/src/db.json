@@ -1,0 +1,81 @@
+{
+  "companies": [
+    {
+      "name": "Company One",
+      "category": "Finance",
+      "start": 1981,
+      "end": 2006,
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "name": "Company Two",
+      "category": "Retail",
+      "start": 1992,
+      "end": 2008
+    },
+    {
+      "id": "4",
+      "name": "Company Four",
+      "category": "Retail",
+      "start": 1989,
+      "end": 2010
+    },
+    {
+      "id": "5",
+      "name": "Updated Company Five",
+      "category": "Technology",
+      "start": 2009,
+      "end": 2022
+    },
+    {
+      "id": "6",
+      "name": "Company Six",
+      "category": "Finance",
+      "start": 1987,
+      "end": 2010
+    },
+    {
+      "id": "7",
+      "name": "Company Seven",
+      "category": "Auto",
+      "start": 1986,
+      "end": 1996
+    },
+    {
+      "id": "8",
+      "name": "Company Eight",
+      "category": "Technology",
+      "start": 2011,
+      "end": 2016
+    },
+    {
+      "id": "9",
+      "name": "Company Nine",
+      "category": "Retail",
+      "start": 1981,
+      "end": 1989
+    },
+    {
+      "id": "10",
+      "name": "Company Ten",
+      "category": "Finance",
+      "start": 1981,
+      "end": 2004
+    },
+    {
+      "name": "Hồ Thái Tuấn",
+      "category": "Manchester-United",
+      "start": 1930,
+      "end": 2025,
+      "id": "12"
+    },
+    {
+      "id": "13",
+      "name": "Boddibear",
+      "category": "Crypto",
+      "start": 2003,
+      "end": 2100
+    }
+  ]
+}

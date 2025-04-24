@@ -1,0 +1,64 @@
+{
+    "cars": [
+      {
+        "id": 1,
+        "make": "Toyota",
+        "model": "Corolla",
+        "year": 2020,
+        "price": 20000,
+        "image": "/img/Corolla.jpg",
+        "details": {
+          "color": "Silver",
+          "engine": "1.8L 4-cylinder",
+          "seats": 5,
+          "maxSpeed": "190 km/h",
+          "fuelType": "Petrol"
+        }
+      },
+      {
+        "id": 2,
+        "make": "Honda",
+        "model": "Civic",
+        "year": 2019,
+        "price": 22000,
+        "image": "/img/honda.jpg",
+        "details": {
+          "color": "Blue",
+          "engine": "2.0L 4-cylinder",
+          "seats": 5,
+          "maxSpeed": "200 km/h",
+          "fuelType": "Petrol"
+        }
+      },
+      {
+        "id": 3,
+        "make": "Ford",
+        "model": "Mustang",
+        "year": 2021,
+        "price": 35000,
+        "image": "/img/ford.jpg",
+        "details": {
+          "color": "Red",
+          "engine": "5.0L V8",
+          "seats": 4,
+          "maxSpeed": "250 km/h",
+          "fuelType": "Petrol"
+        }
+      },
+      {
+        "id": 4,
+        "make": "BMW",
+        "model": "X5",
+        "year": 2022,
+        "price": 60000,
+        "image": "/img/bmw.jpg",
+        "details": {
+          "color": "Black",
+          "engine": "3.0L 6-cylinder",
+          "seats": 5,
+          "maxSpeed": "230 km/h",
+          "fuelType": "Diesel"
+        }
+      }
+    ]
+  }

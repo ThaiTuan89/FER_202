@@ -1,0 +1,72 @@
+{
+  "chatRoom": {
+    "id": "room1",
+    "name": "Demo Chat",
+    "participants": [
+      "user1",
+      "user2"
+    ],
+    "messages": [
+      {
+        "id": "message1",
+        "text": "Hi Bob, how are you?",
+        "senderId": "user1",
+        "timestamp": "09-04-2024 09:00:00 PM"
+      },
+      {
+        "id": "message2",
+        "text": "Hey Alice, I'm good! How about you?",
+        "senderId": "user2",
+        "timestamp": "09-04-2024 09:01:00 PM"
+      },
+      {
+        "id": "message3",
+        "text": "I'm doing well, thanks for asking!",
+        "senderId": "user1",
+        "timestamp": "09-04-2024 09:02:00 PM"
+      },
+      {
+        "id": "message4",
+        "text": "thanks cái gì mà thanks",
+        "senderId": "user1",
+        "timestamp": "18/04/2025 09:23:55 am"
+      },
+      {
+        "id": "message5",
+        "text": "bà nội mày nghe, tao hông có giỡ nghe",
+        "senderId": "user2",
+        "timestamp": "18/04/2025 09:24:28 am"
+      },
+      {
+        "id": "message6",
+        "text": "?????",
+        "senderId": "user1",
+        "timestamp": "18/04/2025 09:53:13 am"
+      },
+      {
+        "id": "message7",
+        "text": "hay á",
+        "senderId": "user1",
+        "timestamp": "18/04/2025 11:24:02 am"
+      },
+      {
+        "id": "message8",
+        "text": "aaa",
+        "senderId": "user1",
+        "timestamp": "18/04/2025 02:13:51 pm"
+      },
+      {
+        "id": "message9",
+        "text": "alo",
+        "senderId": "user1",
+        "timestamp": "21/04/2025 10:53:16 am"
+      },
+      {
+        "id": "message10",
+        "text": "hello",
+        "senderId": "user1",
+        "timestamp": "23/04/2025 11:12:44 am"
+      }
+    ]
+  }
+}

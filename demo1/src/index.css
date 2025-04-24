@@ -1,0 +1,20 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center; /* căn giữa theo chiều ngang */
+  align-items: center;     /* căn giữa theo chiều dọc */
+}
+
+.ts1 {
+  /* Không cần flex ở đây nếu chỉ muốn nó nằm giữa */
+  /* Có thể thêm kích thước hoặc style tùy ý */
+  width: 100%;
+  max-width: 400px;
+}

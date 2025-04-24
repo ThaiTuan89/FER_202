@@ -1,0 +1,87 @@
+{
+  "jobs": [
+    {
+      "id": "1",
+      "jobId": "101",
+      "title": "Frontend Developer",
+      "company": "Innovative Web Solutions",
+      "location": "San Francisco, CA",
+      "description": "Develop user-friendly web applications using modern frameworks.",
+      "requirements": [
+        "Experience with React or Angular",
+        "Proficiency in JavaScript",
+        "HTML",
+        "and CSS",
+        "Familiarity with RESTful APIs"
+      ],
+      "salary": {
+        "currency": "USD",
+        "amount": 70000
+      },
+      "employmentType": "Full-Time",
+      "postedDate": "2024-10-12",
+      "applicationDeadline": "2027-06-09"
+    },
+    {
+      "id": "2",
+      "jobId": "102",
+      "title": "Backend Developer",
+      "company": "DataCorp",
+      "location": "Remote",
+      "description": "Design and maintain backend systems and services.",
+      "requirements": [
+        "Experience with Node.js or Python",
+        "Knowledge of SQL and NoSQL databases",
+        "Familiarity with cloud services (AWS",
+        "Azure)"
+      ],
+      "salary": {
+        "currency": "USD",
+        "amount": 95000
+      },
+      "employmentType": "Part-Time",
+      "postedDate": "2024-10-10",
+      "applicationDeadline": "2028-10-14"
+    },
+    {
+      "id": "3",
+      "jobId": "103",
+      "title": "Mobile App Developer",
+      "company": "AppGenie",
+      "location": "Austin, TX",
+      "description": "Develop cross-platform mobile applications using Flutter.",
+      "requirements": [
+        "Experience in mobile app development",
+        "Proficiency in Flutter and Dart",
+        "Familiarity with REST APIs and third-party libraries"
+      ],
+      "salary": {
+        "currency": "USD",
+        "amount": 78000
+      },
+      "employmentType": "Part-Time",
+      "postedDate": "2024-09-30",
+      "applicationDeadline": "2024-11-01"
+    },
+    {
+      "id": "4",
+      "jobId": "104",
+      "title": "Data Scientist",
+      "company": "AI Insights",
+      "location": "New York, NY",
+      "description": "Analyze and interpret complex data to drive business decisions.",
+      "requirements": [
+        "Strong background in data analysis and statistics",
+        "Experience with Python or R",
+        "Knowledge of machine learning algorithms and tools"
+      ],
+      "salary": {
+        "currency": "USD",
+        "amount": 120000
+      },
+      "employmentType": "Full-Time",
+      "postedDate": "2027-10-25",
+      "applicationDeadline": "2024-10-30"
+    }
+  ]
+}
