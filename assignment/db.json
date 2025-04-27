@@ -1,0 +1,36 @@
+{
+    "library": {
+      "libraryName": "City Central Library",
+      "location": "456 Library Rd, Booktown",
+      "books": [
+        {
+          "id": "B001",
+          "title": "The Great Gatsby",
+          "img": "../img/book1.jpg",
+          "genre": "Classic",
+          "pages": 180,
+          "availableCopies": 5,
+          "price": 15
+        },
+        {
+          "id": "B002",
+          "title": "Atomic Habits",
+          "img": "../img/book2.jpg",
+          "genre": "Self-help",
+          "pages": 320,
+          "availableCopies": 3,
+          "price": 20
+        },
+        {
+          "id": "B003",
+          "title": "Harry Potter and the Sorcerer’s Stone",
+          "img": "../img/book3.jpg",
+          "genre": "Fantasy",
+          "pages": 309,
+          "availableCopies": 7,
+          "price": 18
+        }
+      ]
+    }
+  }
+  

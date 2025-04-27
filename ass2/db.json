@@ -1,0 +1,33 @@
+{
+    "bookstore": {
+      "storeName": "Green Books",
+      "location": "789 Reading Lane, Knowledge City",
+      "books": [
+        {
+          "id": "B001",
+          "title": "The Art of Thinking Clearly",
+          "img": "../img/book1.jpg",
+          "author": "Rolf Dobelli",
+          "price": 15.99,
+          "stock": 20
+        },
+        {
+          "id": "B002",
+          "title": "Atomic Habits",
+          "img": "../img/book2.jpg",
+          "author": "James Clear",
+          "price": 18.50,
+          "stock": 12
+        },
+        {
+          "id": "B003",
+          "title": "Deep Work",
+          "img": "../img/book3.jpg",
+          "author": "Cal Newport",
+          "price": 22.00,
+          "stock": 8
+        }
+      ]
+    }
+  }
+  

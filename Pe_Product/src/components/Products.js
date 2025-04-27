@@ -35,7 +35,7 @@ function Products() {
         const sum = reviews.reduce((total, review) => total + review.rating, 0);
         return (sum / reviews.length).toFixed(1);
     };
- 
+
     const handleProductSelect = (product) => {
         setSelectedProduct(product);
         setReviewer('');
@@ -50,7 +50,7 @@ function Products() {
         const errors = {};
         if (!reviewer.trim()) errors.reviewer = 'Reviewer Name is required';
         if (!comment.trim()) errors.comment = 'Comment is required';
-        
+
         if (Object.keys(errors).length > 0) {
             setValidationError(errors);
             return;
@@ -79,12 +79,12 @@ function Products() {
             .then(response => response.json())
             .then(data => {
 
-                const updatedProducts = products.map(p => 
+                const updatedProducts = products.map(p =>
                     p.id === selectedProduct.id ? { ...p, reviews: data.reviews } : p
                 );
                 setProducts(updatedProducts);
                 setSuccessMessage('Thanks for your review!');
-                
+
                 //reset form
                 setReviewer('');
                 setComment('');
@@ -97,7 +97,7 @@ function Products() {
     return (
         <Container className="mt-4">
             <h1 className="text-center mb-4">Products Review System</h1>
-            
+
             <Row className="mb-4">
                 <Col xs={12} md={4}>
                     <Dropdown>
@@ -110,8 +110,8 @@ function Products() {
                                 All categories
                             </Dropdown.Item>
                             {categories.map((category, index) => (
-                                <Dropdown.Item 
-                                    key={index} 
+                                <Dropdown.Item
+                                    key={index}
                                     onClick={() => setSelectedCategory(category)}
                                 >
                                     {category}
@@ -140,8 +140,8 @@ function Products() {
                                             <div>Category: {product.category}</div>
                                             <div>Average Rate: {getAverageRating(product.reviews)}</div>
                                         </Card.Text>
-                                        <Button 
-                                            variant="primary" 
+                                        <Button
+                                            variant="primary"
                                             onClick={() => handleProductSelect(product)}
                                             className="mt-auto"
                                         >
@@ -153,7 +153,7 @@ function Products() {
                         ))}
                     </Row>
                 </Col>
-                
+
                 <Col xs={12} md={4}>
                     <div className="border rounded p-3">
                         <h5>Reviews details:</h5>
@@ -163,7 +163,7 @@ function Products() {
                                 <div>Title: {selectedProduct.title}</div>
                                 <div>Category: {selectedProduct.category}</div>
                                 <div>Price: {selectedProduct.price}</div>
-                                
+
                                 {successMessage ? (
                                     <div className="mt-3 text-success">
                                         {successMessage}
@@ -174,8 +174,8 @@ function Products() {
                                         <Form>
                                             <Form.Group className="mb-3">
                                                 <Form.Label>Reviewer Name</Form.Label>
-                                                <Form.Control 
-                                                    type="text" 
+                                                <Form.Control
+                                                    type="text"
                                                     value={reviewer}
                                                     onChange={(e) => setReviewer(e.target.value)}
                                                     isInvalid={!!validationError.reviewer}
@@ -186,11 +186,11 @@ function Products() {
                                                     </Form.Text>
                                                 )}
                                             </Form.Group>
-                                            
+
                                             <Form.Group className="mb-3">
                                                 <Form.Label>Comment</Form.Label>
-                                                <Form.Control 
-                                                    as="textarea" 
+                                                <Form.Control
+                                                    as="textarea"
                                                     rows={3}
                                                     value={comment}
                                                     onChange={(e) => setComment(e.target.value)}
@@ -202,7 +202,7 @@ function Products() {
                                                     </Form.Text>
                                                 )}
                                             </Form.Group>
-                                            
+
                                             <Form.Group className="mb-3">
                                                 <Form.Label>Rating</Form.Label>
                                                 <div className="d-flex">
@@ -221,9 +221,9 @@ function Products() {
                                                     ))}
                                                 </div>
                                             </Form.Group>
-                                            
-                                            <Button 
-                                                variant="warning" 
+
+                                            <Button
+                                                variant="warning"
                                                 onClick={handleSubmitReview}
                                             >
                                                 Send Review

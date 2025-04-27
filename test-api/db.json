@@ -1,0 +1,18 @@
+{
+    "jobs": [
+      {
+        "id": "1",
+        "jobId": "J001",
+        "title": "Frontend Developer",
+        "company": "ABC Corp",
+        "location": "Remote",
+        "description": "React developer...",
+        "requirements": ["React", "JavaScript"],
+        "salary": { "currency": "USD", "amount": 70000 },
+        "employmentType": "Full-Time",
+        "postedDate": "2025-04-01",
+        "applicationDeadline": "2025-04-30"
+      }
+    ]
+  }
+  
