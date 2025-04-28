@@ -21,17 +21,28 @@ function LoginForm() {
 
         try {
             // Giả lập dữ liệu đăng nhập (vì không dùng JSON Server)
-            const mockUser = {
+            const mockUser = [{
                 email: 'user@example.com',
                 password: '123456',
                 name: 'Nguyễn Văn A',
                 role: 'User',
                 phone: '0123456789'
-            };
+            },
+            {
+                email: 'admin@example.com',
+                password: '123456',
+                name: 'Nguyễn Văn B',
+                role: 'Admin',
+                phone: '0123456789'
+            }];
 
-            if (email === mockUser.email && password === mockUser.password) {
-                setUserData(mockUser);
-                localStorage.setItem('userData', JSON.stringify(mockUser));
+            const foundUser = mockUser.find(user => 
+                user.email === email && user.password === password
+            );
+    
+            if (foundUser) {
+                setUserData(foundUser);
+                localStorage.setItem('userData', JSON.stringify(foundUser));
                 setError('');
             } else {
                 setError('Email hoặc mật khẩu không đúng');
@@ -46,10 +57,11 @@ function LoginForm() {
     };
 
     return (
-        <>
-            <Form className='ts1' onSubmit={handleSubmit}>
+        <div style={{ maxWidth: '500px', margin: '0 auto', padding: '2rem' }}>
+            <Form onSubmit={handleSubmit}>
+                {error && <p className="text-danger">{error}</p>}
+                
                 <Form.Group className="mb-3" controlId="formBasicEmail">
-                    {error && <p className="text-danger">{error}</p>}
                     <Form.Label>Email address</Form.Label>
                     <Form.Control
                         type="email"
@@ -75,7 +87,7 @@ function LoginForm() {
             </Form>
 
             {userData && (
-                <div style={{ padding: '2rem', marginTop: '2rem', border: '1px solid #ccc' }}>
+                <div style={{ marginTop: '2rem', padding: '1.5rem', border: '1px solid #ccc', borderRadius: '8px', backgroundColor: '#f9f9f9' }}>
                     <h4>Thông tin người dùng</h4>
                     <p><strong>Tên:</strong> {userData.name}</p>
                     <p><strong>Email:</strong> {userData.email}</p>
@@ -83,7 +95,7 @@ function LoginForm() {
                     <p><strong>Số điện thoại:</strong> {userData.phone}</p>
                 </div>
             )}
-        </>
+        </div>
     );
 }
 
